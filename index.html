@@ -1,0 +1,22 @@
+---
+layout: page
+title: James Ousby
+description: A technology blog about Java, Scala, Big Data, Web Development
+---
+
+
+{% for post in site.posts %}
+    <article>
+      <div id="post-header">
+        <h2><a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a></h2>
+      
+        <div class="date">
+          <strong>Posted {{ post.date | date_to_long_string }}</strong>
+        </div>
+      </div>
+      {{ post.content | more: "excerpt" }}
+      <div class="continueLink">
+        <a href="{{ site.base_url }}{{ post.url }}">Continue Reading ... </a>
+      </div>
+    </article>
+{% endfor %}

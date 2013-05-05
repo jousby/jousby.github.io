@@ -1,0 +1,218 @@
+@headingColor:      #444;
+@textColor:         #444;
+@linkColor:         #999;
+@linkHoverColor:    darken(@linkColor, 20%);
+@backgroundColor:   #FFFFF0;
+
+@baseLineHeight:       24px;
+
+
+// ------------------------------------------------------------------- Elements
+
+
+html,
+body {
+    height: 100%;
+    font-family: 'Droid Sans', arial, sans-serif;
+    font-size: 14px;
+    line-height: @baseLineHeight; 
+    color: @textColor;
+    background-color: @backgroundColor;
+    margin:0;
+    padding:0;
+}
+
+.headingCommon {
+    color: @headingColor;
+    margin-top: @baseLineHeight; 
+    margin-bottom: (@baseLineHeight / 2); 
+    font-weight: bold;     
+}
+
+h1 {  
+    .headingCommon;
+    font-size: 30px;
+}
+
+h2 {  
+    .headingCommon;
+    font-size: 24px;
+}
+
+h3 {
+    .headingCommon;
+    font-size: 17px; 
+}
+
+h4 { 
+    .headingCommon;
+    font-size: 14px; 
+}
+
+pre, code {
+    font-family: monospace;
+    font-weight: 60%;
+}
+
+pre{
+    margin-bottom: 8px;
+}
+
+ul, ol {
+    padding-left: 30px;
+    margin-bottom: 8px;  
+}
+
+ul {
+    list-style: disc;    
+}
+
+ol {
+    list-style: decimal;
+}
+
+p {
+    margin-bottom: 8px;  
+    text-align: justify;
+}
+
+a {
+    color: @linkColor;
+}
+
+a:hover {
+    color: @linkHoverColor;
+}
+
+blockquote {
+    border-left: 5px solid @linkColor;
+    padding-left: 10px;
+    p {
+        font-style: italic;
+    }
+}
+
+header {     
+    line-height: (@baseLineHeight *1.5); 
+    margin-top: @baseLineHeight;  
+    margin-bottom: @baseLineHeight;  
+    h1 {
+        font-size: 40px;         
+    }
+    a {
+        color: @headingColor;
+        text-decoration: none; 
+        padding-left: 10px;
+    }
+}
+
+footer {
+    position: relative;
+    margin: -70px auto 0 auto; /* negative value of footer height */
+    width:830px;
+    height: 45px;
+    clear:both;
+    font-size: 12px;
+    p {
+        text-align: center;
+        vertical-align: middle;  
+        margin-top: 25px;  
+    }
+    a {
+       text-decoration: none; 
+    }
+}
+
+#wrap {
+    min-height: 100%;
+    max-width:830px;
+    margin: 0 auto;    
+    z-index: 0;
+}
+
+#main {
+    overflow:auto;
+    padding-bottom: 70px; /* must be same height as the footer */
+}
+ 
+ 
+// -------------------------------------------------------------------- Sidebar
+
+
+#sidebar {    
+    padding-bottom: 70px; /* must be same height as the footer */
+    position: fixed;
+    float: left;
+    width: 240px;  
+    font-size: 13px; 
+    padding-left: 10px; 
+    a {
+       text-decoration: none; 
+    }
+    h3 {
+        margin-top: @baseLineHeight;  
+        margin-bottom: 0px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    h4 {
+        font-weight: normal;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+    img {
+        margin-top: 5px;   
+    }
+    ul {
+        list-style: none;
+        padding-left: 5px;   
+    }
+}
+
+
+// -------------------------------------------------------------------- Content
+
+
+#content {
+    float: right;
+    margin-left: 90px;
+    width: 500px;   
+    margin-top: (@baseLineHeight * 2);  
+}
+
+#post-header{
+    margin-bottom: @baseLineHeight;    
+    h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;    
+    }
+    a {
+        color: @headingColor;
+        text-decoration: none;         
+    }
+}
+
+.date {
+    color: @linkColor;    
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.continueLink {  
+    margin-top: @baseLineHeight;
+    a {
+        text-decoration: none; 
+    }
+}
+
+#disqus_thread {
+    margin-top: (@baseLineHeight * 2);
+    margin-bottom: @baseLineHeight;
+}
+
+article {    
+    border-bottom: 1px dotted @textColor;
+    padding-top: @baseLineHeight;
+    padding-bottom: @baseLineHeight;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ page.title }}</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="{{ site.author.name }}">
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="/assets/jousby/css/reset.css"/>
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'/>
+    <link rel="stylesheet/less" href="/assets/jousby/less/jousby.less" type="text/css" />
+    <link rel="stylesheet" href="/assets/google-code-prettify/prettify-desert.css"/>
+    
+    <script src="/assets/jousby/js/less-1.3.3.min.js"></script>
+    <script src="/assets/jousby/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/google-code-prettify/prettify.js"></script>
+    <script src="/assets/jousby/js/jousby.js"></script>
+    
+    
+    <link rel="shortcut icon" href="/assets/img/favicon.png">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="sidebar">
+            {% include sidebar.html %}
+        </div>
+        <div id="main">  
+            <div id="content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        {% include footer.html %}
+    </footer>    
+    
+    {% include analytics.html %}
+</body>
+
+</html>

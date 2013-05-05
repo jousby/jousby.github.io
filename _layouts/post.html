@@ -1,0 +1,16 @@
+---
+layout: main
+---
+
+<article>
+  <div id="post-header">
+    <h2>{{ page.title }}</h2>
+  
+    <div class="date">
+      <strong>Posted {{ page.date | date_to_long_string }}</strong>
+    </div>
+  </div>
+  {{ content }}
+</article>
+  
+{% include disqus.html %}

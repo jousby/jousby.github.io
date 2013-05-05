@@ -1,0 +1,12 @@
+server_port:  5000
+auto: true
+
+author :
+  name : James Ousby
+  
+google_analytics : 
+  tracking_id : 'UA-37835457-3'
+  domain: 'jamesousby.com'  
+  
+disqus :
+  short_name : jousby
