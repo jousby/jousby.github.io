@@ -101,7 +101,7 @@ for your site. You then get another code block that you need to include on every
 
 > Imitate before you innovate
 
-The design of my blog is based on this free wordpress theme from [Elmastudio](http://ari.elmastudio.de/). There's
+The design of my blog is based on a free wordpress theme from [Elmastudio](http://ari.elmastudio.de/) called Ari. There's
 some really cool responsive blog design's on this site. I plan to come back and make the design of this site
 responsive at a later stage. 
 
